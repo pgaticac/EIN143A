@@ -1,0 +1,14 @@
+E:\2023-2\TDS\Semana1\Semana1\bin\Debug\Semana1.exe.config
+E:\2023-2\TDS\Semana1\Semana1\bin\Debug\Semana1.exe
+E:\2023-2\TDS\Semana1\Semana1\bin\Debug\Semana1.pdb
+E:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.csprojAssemblyReference.cache
+E:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.csproj.CoreCompileInputs.cache
+E:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.exe
+E:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.pdb
+F:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.csprojAssemblyReference.cache
+F:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.csproj.CoreCompileInputs.cache
+F:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.exe
+F:\2023-2\TDS\Semana1\Semana1\obj\Debug\Semana1.pdb
+F:\2023-2\TDS\Semana1\Semana1\bin\Debug\Semana1.exe.config
+F:\2023-2\TDS\Semana1\Semana1\bin\Debug\Semana1.exe
+F:\2023-2\TDS\Semana1\Semana1\bin\Debug\Semana1.pdb
