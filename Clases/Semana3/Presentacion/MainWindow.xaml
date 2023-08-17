@@ -1,0 +1,28 @@
+﻿<Window x:Class="Presentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion"
+        mc:Ignorable="d"
+        Title="Contactos" Height="500" Width="800">
+    <Grid Background="#FFD4E8EC" Margin="0,0,0,-3">
+        <Label x:Name="lblSaludo" Content="Hola Mundo" HorizontalAlignment="Left" Margin="29,31,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="36"/>
+        <Label x:Name="lblNombre" Content="Mi nombre es Pamela" HorizontalAlignment="Left" Margin="29,89,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSaludar" Content="Saludar" HorizontalAlignment="Left" Margin="292,64,0,0" VerticalAlignment="Top" Width="128" Height="41" Background="#FF3ED2F3" Click="BtnSaludar_Click"/>
+        <TextBox x:Name="txtPreguntaNombre" HorizontalAlignment="Left" Height="23" Margin="557,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="¿Cómo te llamas?" HorizontalAlignment="Left" Margin="449,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.269" Width="137"/>
+        <Button x:Name="btnRespuesta" Content="Responder" HorizontalAlignment="Left" Margin="691,51,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="BtnRespuesta_Click"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="57,224,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido" HorizontalAlignment="Left" Margin="57,266,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha de Nacimiento" HorizontalAlignment="Left" Margin="57,306,0,0" VerticalAlignment="Top"/>
+        <Label Content="Teléfono" HorizontalAlignment="Left" Margin="57,345,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grupo" HorizontalAlignment="Left" Margin="57,376,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="206,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Height="23" Margin="206,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <DatePicker x:Name="dpFechaNacimiento" HorizontalAlignment="Left" Margin="206,307,0,0" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="24" Margin="206,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <ComboBox x:Name="cboGrupo" HorizontalAlignment="Left" Margin="206,380,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button x:Name="btnGuardarContacto" Content="Guardar" HorizontalAlignment="Left" Margin="276,430,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
