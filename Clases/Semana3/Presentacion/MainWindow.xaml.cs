@@ -21,6 +21,8 @@ namespace Presentacion
     /// </summary>
     public partial class MainWindow : Window
     {
+        PersonaBLL pbll = new PersonaBLL();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +32,14 @@ namespace Presentacion
             cboGrupo.ItemsSource = Enum.GetValues(typeof(Clasificacion));
             cboGrupo.SelectedValue = Clasificacion.Default;
 
+            CargarContactos();
 
+        }
+
+        private void CargarContactos()
+        {
+            lstContactos.ItemsSource = null;
+            lstContactos.ItemsSource = pbll.ListarTodos();
         }
 
         private void BtnSaludar_Click(object sender, RoutedEventArgs e)
@@ -54,7 +63,7 @@ namespace Presentacion
             DateTime fechaNacimiento = (DateTime)dpFechaNacimiento.SelectedDate;
             string telefono = txtTelefono.Text;
             Clasificacion grupo = (Clasificacion)cboGrupo.SelectedValue;
-           
+
             //2. Validar datos
 
             //3. Crear objeto Persona
@@ -66,7 +75,10 @@ namespace Presentacion
             nuevoContacto.Grupo = grupo;
 
             //4. Guardar objeto Persona
+            pbll.Agregar(nuevoContacto);
+            MessageBox.Show("Contacto Registrado", "Nuevo Contacto", MessageBoxButton.OK, MessageBoxImage.Information);
 
+            CargarContactos();
         }
     }
 }

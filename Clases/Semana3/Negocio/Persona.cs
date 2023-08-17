@@ -28,6 +28,11 @@ namespace Negocio
            
         }
 
-        
+        public override string ToString()
+        {
+            return this.Nombre + " " + this.Apellido + " - " + this.Edad + " años " + this.Telefono;
+        }
+
+
     }
 }

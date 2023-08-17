@@ -23,6 +23,7 @@
         <DatePicker x:Name="dpFechaNacimiento" HorizontalAlignment="Left" Margin="206,307,0,0" VerticalAlignment="Top" Width="145"/>
         <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="24" Margin="206,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
         <ComboBox x:Name="cboGrupo" HorizontalAlignment="Left" Margin="206,380,0,0" VerticalAlignment="Top" Width="145"/>
-        <Button x:Name="btnGuardarContacto" Content="Guardar" HorizontalAlignment="Left" Margin="276,430,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnGuardarContacto" Content="Guardar" HorizontalAlignment="Left" Margin="276,430,0,0" VerticalAlignment="Top" Width="75" Click="BtnGuardarContacto_Click"/>
+        <ListBox x:Name="lstContactos" HorizontalAlignment="Left" Height="302" Margin="449,148,0,0" VerticalAlignment="Top" Width="317"/>
     </Grid>
 </Window>
