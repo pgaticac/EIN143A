@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Negocio.Participante">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAgAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Participante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negocio.Inscripcion">
+    <Position X="3.25" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgAAAIAAIAAAIAAgAEAAAAAAAAAAgAAAACAAAAAgEAA=</HashCode>
+      <FileName>Inscripcion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Negocio.Recorrido">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Recorrido.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Negocio.Categoria">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

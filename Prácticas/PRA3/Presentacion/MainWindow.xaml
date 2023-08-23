@@ -1,0 +1,22 @@
+﻿<Window x:Class="Presentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Recorrido" HorizontalAlignment="Left" Margin="36,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="Categoría" HorizontalAlignment="Left" Margin="36,75,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre Participante" HorizontalAlignment="Left" Margin="36,117,0,0" VerticalAlignment="Top"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="38,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.801,-0.244"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="38,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.033,-1.872"/>
+        <ComboBox HorizontalAlignment="Left" Margin="190,44,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="190,77,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="190,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="190,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox HorizontalAlignment="Left" Margin="190,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
