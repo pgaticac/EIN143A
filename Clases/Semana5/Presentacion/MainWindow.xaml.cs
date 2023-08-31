@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Negocio;
+using Datos;
 
 namespace Presentacion
 {
@@ -26,6 +27,13 @@ namespace Presentacion
         public MainWindow()
         {
             InitializeComponent();
+            CargarCategorias();
+        }
+
+        private void CargarCategorias()
+        {
+            lstCategorias.ItemsSource = null;
+            lstCategorias.ItemsSource = catBll.GetAll();
         }
 
         private void BtnNuevaCategoria_Click(object sender, RoutedEventArgs e)
@@ -33,6 +41,13 @@ namespace Presentacion
             string categoria = txtNuevaCategoria.Text;
             //Validar
             catBll.Add(categoria);
+
+            //Mensaje
+
+            txtNuevaCategoria.Text = String.Empty;
+
+            CargarCategorias();
+
         }
     }
 }

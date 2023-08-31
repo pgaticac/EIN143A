@@ -15,11 +15,37 @@ namespace Negocio
         {
             //Validar reglas de negocio
 
-            Categoria nueva = new Categoria();
-            nueva.Nombre = nombre;
+            //Validar que categoría no exista en la BD
+            if (this.Find(nombre) == false)
+            {
+                Categoria nueva = new Categoria();
+                nueva.Nombre = nombre;
 
-            bde.Categoria.Add(nueva);
-            bde.SaveChanges();
+                bde.Categoria.Add(nueva);
+                bde.SaveChanges();
+            }
+        }
+
+        public List<Categoria> GetAll()
+        {
+            List<Categoria> categorias = new List<Categoria>();
+
+            categorias = bde.Categoria.ToList();
+
+            return categorias;
+        }
+
+        public bool Find(string nombre)
+        {
+            Categoria cat = bde.Categoria.FirstOrDefault(c => c.Nombre == nombre);
+            if (cat == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

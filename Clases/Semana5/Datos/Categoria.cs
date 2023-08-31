@@ -22,7 +22,12 @@ namespace Datos
     
         public int Id { get; set; }
         public string Nombre { get; set; }
-    
+
+        public override string ToString()
+        {
+            return this.Nombre;
+        }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tarea> Tarea { get; set; }
     }

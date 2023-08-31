@@ -11,6 +11,7 @@
         <Label Content="Nueva Categoría" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNuevaCategoria" HorizontalAlignment="Left" Height="23" Margin="22,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnNuevaCategoria" Content="Agregar" HorizontalAlignment="Left" Margin="67,125,0,0" VerticalAlignment="Top" Width="75" Click="BtnNuevaCategoria_Click"/>
+        <ListBox x:Name="lstCategorias" HorizontalAlignment="Left" Height="201" Margin="22,180,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
