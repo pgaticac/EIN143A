@@ -7,17 +7,26 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="600" Loaded="UserControl_Loaded">
     <Grid Background="#FFDADADA">
-        <Label Content="Categorías" HorizontalAlignment="Left" Margin="52,32,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Categorías" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <DataGrid x:Name="dgCategorias" 
                   HorizontalAlignment="Left" 
-                  Height="194" Margin="283,105,0,0" VerticalAlignment="Top" Width="275"
-                  AutoGenerateColumns="False" ColumnWidth="*">
+                  Height="311" Margin="31,62,0,0" VerticalAlignment="Top" Width="256"
+                  AutoGenerateColumns="False" ColumnWidth="*" GridLinesVisibility="None" HorizontalGridLinesBrush="{x:Null}" VerticalGridLinesBrush="{x:Null}" SelectionChanged="DgCategorias_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" />
             </DataGrid.Columns>
-            
         </DataGrid>
+        <GroupBox x:Name="form" Header="Nueva Categoría" HorizontalAlignment="Left" Height="183" Margin="323,62,0,0" VerticalAlignment="Top" Width="249">
+            <Grid>
+                <Label Content="Nombre:" HorizontalAlignment="Left" Margin="7,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.053,-0.346"/>
+                <TextBox x:Name="txtCategoria" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217"/>
+                <Button x:Name="btnCrear" Content="Crear" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="53" Click="BtnCrear_Click"/>
+                <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="53" Click="BtnGuardar_Click" Visibility="Hidden"/>
+                <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="125,64,0,0" VerticalAlignment="Top" Width="52" Click="BtnCancelar_Click" Visibility="Hidden"/>
+                <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="68,64,0,0" VerticalAlignment="Top" Width="52" Click="BtnBorrar_Click" Visibility="Hidden"/>
+
+            </Grid>
+        </GroupBox>
 
     </Grid>
 </UserControl>
