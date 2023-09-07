@@ -45,13 +45,13 @@ namespace Presentacion
 
         private void BtnNuevaCategoria_Click(object sender, RoutedEventArgs e)
         {
-            string categoria = txtNuevaCategoria.Text;
+            string categoria = txtCategoria.Text;
             //Validar
             catBll.Add(categoria);
 
             //Mensaje
 
-            txtNuevaCategoria.Text = String.Empty;
+            txtCategoria.Text = String.Empty;
 
             CargarCategorias();
 
@@ -83,18 +83,22 @@ namespace Presentacion
             else
             {
                 c = (Categoria)lstCategorias.SelectedItem;
-                txtNuevaCategoria.Text = c.Nombre;
+                txtCategoria.Text = c.Nombre;
+
+                btnEditarCategoria.Visibility = Visibility.Visible;
+                btnCancelar.Visibility = Visibility.Visible;
+                btnNuevaCategoria.Visibility = Visibility.Collapsed;
 
             }
         }
 
         private void BtnEditarCategoria_Click(object sender, RoutedEventArgs e)
         {
-            c.Nombre = txtNuevaCategoria.Text;
+            c.Nombre = txtCategoria.Text;
             catBll.Edit(c);
             CargarCategorias();
 
-            txtNuevaCategoria.Text = String.Empty;
+            txtCategoria.Text = String.Empty;
 
         }
 
@@ -104,6 +108,15 @@ namespace Presentacion
             CargarCategorias(filtro);
 
             
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            btnEditarCategoria.Visibility = Visibility.Hidden;
+            btnCancelar.Visibility = Visibility.Hidden;
+            btnNuevaCategoria.Visibility = Visibility.Visible;
+            txtCategoria.Text = string.Empty;
+            c = null;
         }
     }
 }
